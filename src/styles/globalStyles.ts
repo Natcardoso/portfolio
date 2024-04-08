@@ -13,19 +13,28 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
-        background-color: #212121;
+        background-color: var(--background-wrapper);
     }
 
     *::-webkit-scrollbar {
-        width: 3px;            
+        width: 4px;            
     }
 
     *::-webkit-scrollbar-track {
-        background: white;       
+        background: var(--background);       
     }
 
     *::-webkit-scrollbar-thumb {
-        background-color: #000;   
+        background-color: var(--gray);   
         border-radius: 2px;      
+    }
+
+    :root {
+        --background-wrapper: #121214;
+        --background: #1A1A1D;
+        --title: rgba(153, 86, 246, 0.5);
+        --purple: #9956F6;
+        --white: #FFFFFF;
+        --gray: #A8A8A8;
     }
 `;

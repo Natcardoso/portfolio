@@ -35,13 +35,20 @@ const About = () => {
                 </div>
                 <Text data-aos="zoom-in-left">
                     <span className="title">
-                        Paixão pela fusão entre arte e tecnologia, onde design e
-                        código se unem
+                        “Uma verdadeira amante da programação web”
                     </span>
                     <span>
-                        Eu sou Natália Almeida, desenvolvedora front-end com 2
-                        anos de experiência em tecnologias como React, Styled
-                        Components, TypeScript, API, etc.
+                        Meu chamo <strong>Natália Almeida</strong> e sou formada
+                        em <strong>Análise e Desenvolvimento</strong> de
+                        Sistemas. Escolhi a programação web como minha área de
+                        atuação porque me encantei por essa área. No momento,
+                        trabalho como <strong>desenvolvedora Front-end</strong>,
+                        onde faço uso das minhas habilidades em tecnologias como{" "}
+                        <strong>
+                            React, TypeScript, Figma, Git, entre outras
+                        </strong>
+                        , para criar projetos que são verdadeiras expressões do
+                        meu entusiasmo e dedicação.
                     </span>
                 </Text>
             </Description>

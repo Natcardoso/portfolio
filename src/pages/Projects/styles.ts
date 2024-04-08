@@ -1,32 +1,106 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 10rem;
     align-items: center;
     height: 100vh;
-    gap: 3rem;
+    gap: 1rem;
 
     .title {
         margin-top: 2rem;
         z-index: 1;
         background: transparent;
-        color: #fff;
+        color: var(--white);
         font-size: 3rem;
         font-weight: 600;
     }
 `;
 
 export const TitlePage = styled.div`
-    position: absolute;
-    top: 0;
-    color: rgba(106, 60, 144, 0.46);
+    color: var(--title);
     font-weight: 600;
-    font-size: 15rem;
+    font-size: 10rem;
 `;
 
+export const Content = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 10rem;
+`;
+
+const animationButton = keyframes`
+    from {
+        opacity: 0;
+    }
+`;
+
+export const ContainerCard = styled.div`
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--background);
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.4);
+        z-index: 2;
+    }
+
+    img {
+        border-radius: 8px;
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .background {
+        background: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            background: transparent;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        a {
+            background: transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                filter: brightness(50%);
+            }
+        }
+
+        button {
+            cursor: pointer;
+            margin-top: 0.5rem;
+            border-radius: 50px;
+            background: var(--purple);
+            padding: 4px 16px;
+            border: transparent;
+            color: var(--white);
+            animation: ${animationButton} 0.5s ease;
+        }
+    }
+`;
+
+//details
 export const ContainerContent = styled.div`
     display: flex;
     align-items: center;
@@ -42,7 +116,7 @@ export const ContainerContent = styled.div`
         display: flex;
         flex-direction: column;
         gap: 16px;
-        color: #fff;
+        color: var(--white);
         width: 30%;
         font-size: 1.5rem;
 
@@ -68,10 +142,57 @@ export const ContainerContent = styled.div`
             font-size: 1.2rem;
             cursor: pointer;
             background: transparent;
-            color: #6a3c90;
-            border: 3px solid #6a3c90;
+            color: var(--purple);
+            border: 3px solid var(--purple);
             border-radius: 50rem;
             padding: 0.2rem 1.2rem;
+
+            :hover {
+                color: red;
+            }
+        }
+    }
+`;
+
+export const ContainerFooter = styled.div`
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    padding: 8px;
+    background-color: var(--background);
+    font-size: 12px;
+
+    div,
+    span,
+    svg,
+    strong,
+    a {
+        background-color: transparent;
+    }
+
+    div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        position: absolute;
+        right: 8px;
+
+        a {
+            font-size: 2rem;
+            color: var(--white);
+            transition: all 0.2s ease;
+            margin-left: 1rem;
+
+            :hover {
+                color: var(--purple);
+            }
         }
     }
 `;

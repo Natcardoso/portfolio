@@ -12,10 +12,10 @@ export const Container = styled.div`
 
 export const TitlePage = styled.div`
     position: absolute;
-    top: 0;
-    color: rgba(106, 60, 144, 0.46);
+    top: 1rem;
+    color: var(--title);
     font-weight: 600;
-    font-size: 15rem;
+    font-size: 14rem;
 `;
 
 export const Description = styled.div`
@@ -31,10 +31,10 @@ export const Description = styled.div`
 
         img {
             object-fit: cover;
-            width: 350px;
-            height: 350px;
+            width: 320px;
+            height: 320px;
             border-radius: 100%;
-            border: 4px solid #6a3c90;
+            border: 4px solid var(--purple);
         }
     }
 `;
@@ -48,15 +48,16 @@ export const Text = styled.div`
     background: border-box;
 
     .title {
-        font-size: 2.5rem;
-        color: #fff;
+        text-align: center;
+        font-size: 2.2rem;
+        color: var(--white);
         font-weight: 600;
         background: transparent;
     }
 
     span {
-        color: #a8a8a8;
-        font-size: 1.5rem;
+        color: var(--gray);
+        font-size: 1.2rem;
     }
 `;
 
@@ -71,9 +72,9 @@ export const ContainerSkills = styled.div`
         text-align: center;
         font-size: 2rem;
         font-weight: 600;
-        color: #6a3c90;
+        color: var(--purple);
         font-weight: 600;
-        border-bottom: 3px solid #6a3c90;
+        border-bottom: 3px solid var(--purple);
         width: 100%;
         padding-bottom: 1rem;
     }
@@ -81,7 +82,7 @@ export const ContainerSkills = styled.div`
 
 export const ContainerCard = styled.div`
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 
     .card {
         display: flex;
@@ -93,8 +94,8 @@ export const ContainerCard = styled.div`
         height: -webkit-fill-available;
 
         img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 10px;
             overflow: hidden;
         }
