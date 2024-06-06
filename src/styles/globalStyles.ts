@@ -32,9 +32,9 @@ export const GlobalStyles = createGlobalStyle`
     :root {
         --background-wrapper: #121214;
         --background: #1A1A1D;
-        --title: rgba(153, 86, 246, 0.5);
+        --title: rgba(153, 86, 246);
         --purple: #9956F6;
         --white: #FFFFFF;
         --gray: #A8A8A8;
-    }
+    } 
 `;

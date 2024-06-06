@@ -12,17 +12,21 @@ export const Container = styled.div`
         font-size: 10rem;
         font-weight: 600;
         color: var(--title);
+        pointer-events: none;
     }
 
     .subTitle {
         font-size: 2.5rem;
         color: var(--white);
         position: absolute;
-        bottom: 23rem;
+        bottom: 24rem;
         background: transparent;
         font-weight: 600;
-        width: 43%;
         text-align: center;
+
+        span {
+            background: transparent;
+        }
     }
 `;
 
@@ -32,12 +36,21 @@ export const ContainerHeader = styled.div`
     right: 0;
     color: var(--white);
     display: flex;
+    justify-content: flex-end;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem 3rem;
+    z-index: 2;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 10%,
+        transparent
+    );
+    width: 100%;
 
     span {
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
 
         :hover {
             color: var(--purple);

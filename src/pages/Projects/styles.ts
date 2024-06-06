@@ -6,29 +6,14 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    gap: 1rem;
-
-    .title {
-        margin-top: 2rem;
-        z-index: 1;
-        background: transparent;
-        color: var(--white);
-        font-size: 3rem;
-        font-weight: 600;
-    }
-`;
-
-export const TitlePage = styled.div`
-    color: var(--title);
-    font-weight: 600;
-    font-size: 10rem;
+    padding-top: 4rem;
+    gap: 2rem;
 `;
 
 export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 0 10rem;
+    gap: 12px;
 `;
 
 const animationButton = keyframes`
@@ -40,22 +25,26 @@ const animationButton = keyframes`
 export const ContainerCard = styled.div`
     border-radius: 10px;
     overflow: hidden;
-    background-color: var(--background);
-    padding: 10px;
-    position: relative;
+    padding: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    position: relative;
 
     &:hover {
         transform: scale(1.4);
         z-index: 2;
     }
 
-    img {
-        border-radius: 8px;
+    .divImg {
         width: 350px;
         height: 200px;
-        object-fit: cover;
+
+        img {
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .background {
@@ -74,8 +63,10 @@ export const ContainerCard = styled.div`
 
         span {
             background: transparent;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
+            text-align: center;
+            width: 50%;
         }
 
         a {
@@ -96,6 +87,7 @@ export const ContainerCard = styled.div`
             border: transparent;
             color: var(--white);
             animation: ${animationButton} 0.5s ease;
+            font-weight: 500;
         }
     }
 `;
