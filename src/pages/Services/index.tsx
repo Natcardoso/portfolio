@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Container, ContainerCard } from "./styles";
 import UiIcon from "../../assets/ui-design.svg";
 import DevIcon from "../../assets/dev.svg";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, ContainerCard, ContainerFooter, Content } from "./styles";
 import creditCardImg from "../../assets/imgProjects/creditCardImg.png";
 import formMultStepsImg from "../../assets/imgProjects/multEtapasImg.png";

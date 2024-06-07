@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, ContainerIcons } from "./styles";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
