@@ -1,18 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PageInitial from "../src/pages/PageInitial";
 import { useEffect, useRef } from "react";
-// import { ContainerHeader } from "./pages/Home/styles";
-import Router from "./router";
-
-// const Header = () => {
-//     return (
-//         <ContainerHeader>
-//             <span>Sobre mim</span>
-//             <span>Serviços</span>
-//             <span>Projetos</span>
-//         </ContainerHeader>
-//     );
-// };
 
 function App() {
     const myRef = useRef(null);
@@ -23,8 +12,7 @@ function App() {
 
     return (
         <div ref={myRef}>
-            {/* <Header /> */}
-            <Router />
+            <PageInitial />
         </div>
     );
 }
