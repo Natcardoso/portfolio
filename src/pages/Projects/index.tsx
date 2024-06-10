@@ -82,8 +82,8 @@ const Projects = () => {
                 "Git",
                 "Github",
             ],
-            linkGithub: "https://github.com/Natcardoso/shopping-card",
-            linkDeploy: "",
+            linkGithub: "https://github.com/Natcardoso/shopping-cart",
+            linkDeploy: "https://natcardoso.github.io/shopping-cart/",
         },
         {
             name: "Chat Web",
@@ -103,7 +103,7 @@ const Projects = () => {
                 "Uuid",
             ],
             linkGithub: "https://github.com/Natcardoso/chat-web",
-            linkDeploy: "",
+            linkDeploy: "https://natcardoso.github.io/chat-web/",
         },
         {
             name: "Clone UI - Netflix",
@@ -120,8 +120,8 @@ const Projects = () => {
                 "React Router Dom",
                 "Api-The movie database Api",
             ],
-            linkGithub: "https://github.com/Natcardoso/netflix",
-            linkDeploy: "",
+            linkGithub: "https://github.com/Natcardoso/ui-clone-netflix",
+            linkDeploy: "https://natcardoso.github.io/ui-clone-netflix/",
         },
         {
             name: "Formulário Multi Etapas",
@@ -138,7 +138,7 @@ const Projects = () => {
                 "Github",
             ],
             linkGithub: "https://github.com/Natcardoso/form-mult-step",
-            linkDeploy: "",
+            linkDeploy: "https://natcardoso.github.io/form-mult-step/",
         },
         {
             name: "Todo List",
